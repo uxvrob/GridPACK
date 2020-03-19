@@ -200,6 +200,7 @@ function(gridpack_setup)
   endif()
 
   if (GRIDPACK_HAVE_CPLEX)
+    list(APPEND gp_include @CPLEX_INCLUDE_DIRS@)
     list(APPEND gp_libs @CPLEX_LIBRARIES@)
   endif()
 
